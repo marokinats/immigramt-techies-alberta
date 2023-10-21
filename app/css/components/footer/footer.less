@@ -1,0 +1,59 @@
+.footer {
+  padding: 20px 0;
+  background-color: @blue-normal;
+}
+
+.footer__content {
+  display: flex;
+}
+
+.footer__socials {
+  width: 500px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__socials-link {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  &:hover,
+  &:active,
+  &:visited {
+    text-decoration: none;
+  }
+  &_fb {
+    background: url('../img/css/components/footer/fb.svg') no-repeat center center / cover;
+  }
+  &_in {
+    background: url('../img/css/components/footer/in.svg') no-repeat center center / cover;
+  }
+  &_inst {
+    background: url('../img/css/components/footer/inst.svg') no-repeat center center / cover;
+  }
+}
+
+.footer__email {
+  color: @orange;
+  &:hover {
+    color: @orange-hover;
+    text-decoration: underline;
+  }
+  &:visited,
+  &:active {
+    color: @orange-active;
+    text-decoration: none;
+  }
+}
+
+.footer__info {
+  margin-top: 10px;
+  color: @white;
+}
+
+.footer__politics {
+  text-decoration: underline;
+  .gradient-text(@gradient-user-default-color, @gradient-user);
+}

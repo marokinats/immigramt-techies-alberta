@@ -1,0 +1,80 @@
+.scroll-arrow {
+  position: fixed;
+  bottom: 50px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+
+  @media @screen-gt-xs {
+    right: 85px;
+  }
+
+  @media @screen-gt-s {
+    right: 45px;
+  }
+
+  @media @screen-gt-m {
+    right: 75px;
+  }
+}
+.scroll-arrow.no-opacity {
+  animation: noOpacity 0s ease-in-out forwards;
+}
+.scroll-arrow:not(.no-opacity) {
+  animation: opacity 1s ease-in-out forwards;
+}
+.scroll-arrow.centered {
+  right: 50%;
+  transform: translateX(50%);
+}
+.scroll-arrow__text {
+  .gradient-text(@gradient-scroll-default-color, @gradient-scroll);
+  font-size: 13px;
+  line-height: 1.2;
+
+  @media @screen-gt-xs {
+    font-size: 14px;
+  }
+
+  @media @screen-gt-s {
+    font-size: 18px;
+  }
+}
+
+.scroll-arrow__wrap {
+  margin-right: 10px;
+  overflow: hidden;
+  height: 16px;
+
+  @media @screen-gt-xs {
+    height: 20px;
+  }
+  @media @screen-gt-s {
+    height: 24px;
+  }
+}
+
+.scroll-arrow__img {
+  height: 8px;
+  width: 13px;
+  animation: arrowScroll 2s infinite linear;
+  animation-delay: 0.5s;
+  @media @screen-gt-xs {
+    height: 10px;
+    width: 16px;
+  }
+
+  @media @screen-gt-s {
+    height: 12px;
+    width: 21px;
+  }
+}
+
+@keyframes arrowScroll {
+  0% {
+    transform: translateY(-110%);
+  }
+  100% {
+    transform: translateY(200%);
+  }
+}

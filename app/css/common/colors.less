@@ -1,0 +1,61 @@
+@black: #000;
+@white: #fff;
+
+// Orange
+@orange: #fcbc5c;
+@orange-hover: #e3a953;
+@orange-active: #ca964a;
+
+@orange-light: #fff8ef;
+@orange-light-hover: #fff5e7;
+@orange-light-active: #feeacc;
+
+@orange-dark: #bd8d45;
+@orange-dark-hover: #977137;
+@orange-dark-active: #715529;
+@orange-darker: #584220;
+
+// BLUE
+@blue-normal: #374983;
+@blue-normal-hover: #324276;
+@blue-normal-active: #2c3a69;
+
+@blue-light: #ebedf3;
+@blue-light-hover: #e1e4ec;
+@blue-light-active: #c1c7d9;
+
+@blue-dark: #293762;
+@blue-dark-hover: #212c4f;
+@blue-dark-active: #19213b;
+@blue-darker: #131a2e;
+
+// WHITE
+@white-normal: #f3fbfb;
+@white-normal-hover: #dbe2e2;
+@white-normal-active: #c2c9c9;
+
+@white-light: #feffff;
+@white-light-hover: #fdfefe;
+@white-light-active: #fbfefe;
+
+@white-dark: #b6bcbc;
+@white-dark-hover: #929797;
+@white-dark-active: #6d7171;
+@white-darker: #555858;
+
+// Gradient
+@gradient-user: linear-gradient(90deg, #43c8fc 0%, #ff4fe2 73.44%);
+@gradient-user-default-color: #ff4fe2;
+
+@gradient-scroll: linear-gradient(90deg, #fa5c7e 0%, #6e81f8 100%);
+@gradient-scroll-default-color: #6e81f8;
+
+@gradient-blue: linear-gradient(89.9deg, #9cface 1.07%, #2fc4f9 49.04%, #513aff 98.02%);
+@gradient-blue-default-color: #513aff;
+
+.gradient-text(@gradient-default-color, @gradient) {
+  background: @gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: @gradient-default-color;
+}
