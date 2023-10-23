@@ -8,48 +8,81 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Immigrant techies</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
     <!-- Body -->
-    <!-- Header -->
-<header class="header">
-  <div class="container">
-    <div class="header__wrapper">
-      <a href="/" class="header__logo"></a>
-      <nav>
-        <ul class="header__list">
-          <li class="header__item"><a href="/" class="header__link">Link 1</a></li>
-          <li class="header__item"><a href="/" class="header__link">Link 2</a></li>
-          <li class="header__item"><a href="/" class="header__link">Link 3</a></li>
-        </ul>
-      </nav>
-    </div>
-  </div>
-</header>
-
-
-<!-- Scroll Arrow -->
+    <!-- Scroll Arrow -->
 
 
 <main class="wrapper">
-  <!-- Main -->
-  <section class="main section section_orange">
+  <!-- Header -->
+  <header id="header" class="header">
   <div class="container">
-    <div class="main__wrapper">
-      <div class="main__left">
-        <h1 class="h1 main__title">Immigtant Techies</h1>
-        <h3 class="h3 main__subtitle section__subtitle section__subtitle_blue">Who we are</h3>
-        <p class="main__text">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid">
+        <a href="index.html" class="navbar-brand header__logo">
+          <img src="img/css/components/header/logo.svg" alt="Logo" class="header__logo-img" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <!-- <i class="ti-menu"></i> -->
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a href="#about_area" class="nav-link header__link">About</a></li>
+            <li class="nav-item"><a href="#mission_area" class="nav-link header__link">Mission</a></li>
+            <li class="nav-item"><a href="#goals_area" class="nav-link header__link">Goals</a></li>
+            <li class="nav-item"><a href="#events_area" class="nav-link header__link">Events</a></li>
+            <li class="nav-item"><a href="#reviews_area" class="nav-link header__link">Reviews</a></li>
+            <li class="nav-item"><a href="#contacts_area" class="nav-link header__link">Contacts</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+  <!-- Main -->
+  <section id="section-main" class="main">
+  <div class="main__background">
+    <div class="container">
+      <div class="main__content">
+        <h3 class="wow animate__animated animate__fadeInLeft main__subtitle section__subtitle section__subtitle_orange">
+          Who we are
+        </h3>
+        <h1 class="wow animate__animated animate__fadeInLeft h1 main__title">Immigtant Techies</h1>
+        <p class="wow animate__animated animate__fadeInLeft main__text">
           A&nbsp;tech enthusiast group for highly-skilled immigrants: those who like to&nbsp;support others, who are
           already in&nbsp;or are interested in&nbsp;pivoting to&nbsp;tech careers and startups. We&nbsp;will
           be&nbsp;hosting online and in-person events on&nbsp;a range of&nbsp;tech topics. Looking forward
           to&nbsp;exploring and networking with immigrants far and wide.
         </p>
-        <button type="button" class="button button_blue main__button">Join our talent pool</button>
-      </div>
-      <div class="main__right">
-        <img src="img/css/components/section-main/main.png" alt="people" class="main__image" />
+        <button type="button" class="wow animate__animated animate__fadeInUp button button_blue main__button">
+          Join our talent pool
+        </button>
       </div>
     </div>
   </div>
@@ -57,15 +90,17 @@
 
 
   <!-- About Us -->
-  <section class="about-us section section_blue">
+  <section id="about_area" class="about-us section section_orange">
   <div class="container">
-    <div class="about-us__wrapper">
-      <div class="about-us__left">
-        <img src="img/css/components/section-about-us/about-us.png" alt="people about us" class="about-us__image" />
+    <h2 class="h2 about-us__title">Our story</h2>
+    <div class="wow animate__animated animate__fadeInRight about-us__wrapper about-us__wrapper_1">
+      <div class="about-us__sm">
+        <div class="about-us__image">
+          <img src="img/css/components/section-about-us/about-us-1.jpg" alt="about us" class="about-us__img" />
+        </div>
       </div>
-      <div class="about-us__right">
-        <h2 class="h2 about-us__title">Our story</h2>
-        <p class="about-us__text">
+      <div class="about-us__lg">
+        <p class="about-us__text about-us__text_right">
           In&nbsp;2019, Wunmi Adekanmbi took her first curious steps into the vibrant Alberta tech scene, little knowing
           the incredible journey that lay ahead. To&nbsp;her delight, she stumbled upon a&nbsp;thriving and innovative
           community driven by&nbsp;a&nbsp;powerful social contract of&nbsp;giving first. Embraced by&nbsp;a&nbsp;strong
@@ -73,7 +108,11 @@
           of&nbsp;transforming its economy, shifting from an&nbsp;oil and gas legacy to&nbsp;embrace the boundless
           potential of&nbsp;the tech industry.
         </p>
-        <p class="about-us__text">
+      </div>
+    </div>
+    <div class="wow animate__animated animate__fadeInLeft about-us__wrapper about-us__wrapper_2">
+      <div class="about-us__lg">
+        <p class="about-us__text about-us__text_left">
           However, amidst the warmth and welcome, Wunmi couldn&rsquo;t ignore a&nbsp;significant issue&nbsp;&mdash; the
           lack of&nbsp;diversity in&nbsp;the Alberta tech community, with only a&nbsp;handful of&nbsp;individuals who
           shared her background. Though she felt embraced, she also recognized that she wasn&rsquo;t explicitly invited
@@ -82,27 +121,64 @@
           Alberta was born.
         </p>
       </div>
+      <div class="about-us__sm">
+        <div class="about-us__image">
+          <img src="img/css/components/section-about-us/about-us-2.jpg" alt="about us" class="about-us__img" />
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 
   <!-- Mission -->
-  <section class="mission section section_orange">
+  <section id="mission_area" class="mission section section_blue">
   <div class="container">
     <div class="mission__wrapper">
-      <div class="mission__left">
-        <h2 class="h2 mission__title">Our mission</h2>
-        <h3 class="h3 mission__subtitle section__subtitle section__subtitle_blue">What we represent</h3>
-        <p class="mission__text">&mdash;&nbsp;A&nbsp;bridge into Alberta&rsquo;s innovation community</p>
-        <p class="mission__text">&mdash;&nbsp;An&nbsp;exploratory space for those interested in&nbsp;tech</p>
-        <p class="mission__text">&mdash;&nbsp;Opportunities for networking and mentorship</p>
-        <p class="mission__text">
-          &mdash;&nbsp;Curator of&nbsp;emerging tech content, events, resources and career opportunities
-        </p>
-      </div>
-      <div class="mission__right">
-        <img src="img/css/components/section-mission/mission.png" alt="people" class="mission__image" />
+      <h3
+        class="wow animate__animated animate__fadeInLeft h3 mission__subtitle section__subtitle section__subtitle_orange"
+      >
+        What we represent
+      </h3>
+      <h2 class="wow animate__animated animate__fadeInLeft h2 mission__title">Our mission</h2>
+      <div class="row">
+        <div class="col col-md-6 col-lg-3">
+          <div class="mission__card">
+            <div class="mission__card-icon">
+              <i class="ti-car"></i>
+            </div>
+            <p class="mission__text">A&nbsp;bridge into Alberta&rsquo;s innovation community</p>
+          </div>
+        </div>
+        <div class="col col-md-6 col-lg-3">
+          <div class="mission__card">
+            <div class="mission__card-icon">
+              <i class="ti-world"></i>
+            </div>
+            <p class="mission__text">An&nbsp;exploratory space for those interested in&nbsp;tech</p>
+          </div>
+        </div>
+        <div class="col-12 d-lg-none">
+          <div class="mission__gap"></div>
+        </div>
+        <div class="col col-md-6 col-lg-3">
+          <div class="mission__card">
+            <div class="mission__card-icon">
+              <i class="ti-comments-smiley"></i>
+            </div>
+            <p class="mission__text">Opportunities for networking and mentorship</p>
+          </div>
+        </div>
+        <div class="col col-md-6 col-lg-3">
+          <div class="mission__card">
+            <div class="mission__card-icon">
+              <i class="ti-hand-open"></i>
+            </div>
+            <p class="mission__text">
+              Curator of&nbsp;emerging tech content, events, resources and career opportunities
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -110,54 +186,29 @@
 
 
   <!-- Goals -->
-  <section class="goals section section_blue">
+  <section id="goals_area" class="goals">
   <div class="container">
     <div class="goals__wrapper">
-      <div class="goals__left">
-        <img src="img/css/components/section-goals/goals.png" alt="people about us" class="goals__image" />
-      </div>
-      <div class="goals__right">
-        <h2 class="h2 goals__title">Our goals</h2>
-        <p class="goals__text">
-          Providing community and support for professional immigrants who desire to&nbsp;pivot to&nbsp;or&nbsp;advance
-          in&nbsp;tech careers.
-        </p>
-        <h3 class="h3 goals__subtitle section__subtitle section__subtitle_orange">Our vision</h3>
-        <p>
-          To&nbsp;create a&nbsp;vibrant and cohesive tech community where immigrant professionals can harness their
-          diverse backgrounds, skills, and experiences to&nbsp;make meaningful contributions to&nbsp;the technology
-          sector. We&nbsp;aspire to&nbsp;be&nbsp;the go-to platform for connecting immigrants in&nbsp;tech, facilitating
-          collaborations, and promoting equal opportunities for every member, regardless of&nbsp;their cultural
-          background.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Team -->
-  <section class="team section section_orange">
-  <div class="container">
-    <h2 class="h2 team__title">Leadership Team</h2>
-    <div class="team__wrapper">
-      <div class="team__card">
-        <div class="team__image team__image_wunmi"></div>
-        <h4 class="h4 team__subtitle section__subtitle section__subtitle_blue">Wunmi Adekanmbi</h4>
-        <p class="team__text">Organizer</p>
-      </div>
-      <div class="team__card">
-        <div class="team__image team__image_yash"></div>
-        <h4 class="h4 team__subtitle section__subtitle section__subtitle_blue">Yash Parekh</h4>
-        <p class="team__text">Co-organizer</p>
-      </div>
+      <h2 class="h2 goals__title">Our goals</h2>
+      <p class="goals__text goals__text_left">
+        Providing community and support for professional immigrants who desire to&nbsp;pivot to&nbsp;or&nbsp;advance
+        in&nbsp;tech careers.
+      </p>
+      <h3 class="h3 goals__subtitle section__subtitle section__subtitle_blue">Our vision</h3>
+      <p class="goals__text goals__text_right">
+        To&nbsp;create a&nbsp;vibrant and cohesive tech community where immigrant professionals can harness their
+        diverse backgrounds, skills, and experiences to&nbsp;make meaningful contributions to&nbsp;the technology
+        sector. We&nbsp;aspire to&nbsp;be&nbsp;the go-to platform for connecting immigrants in&nbsp;tech, facilitating
+        collaborations, and promoting equal opportunities for every member, regardless of&nbsp;their cultural
+        background.
+      </p>
     </div>
   </div>
 </section>
 
 
   <!-- Events -->
-  <section class="events section section_blue">
+  <section id="events_area" class="events section section_blue">
   <div class="container">
     <h2 class="h2 events__title">Our events</h2>
     <div class="events__wrapper">
@@ -190,7 +241,7 @@
 
 
   <!-- Reviews -->
-  <section class="reviews section section_orange">
+  <section id="reviews_area" class="reviews section section_orange">
   <div class="container">
     <h2 class="h2 reviews__title">Reviews</h2>
     <div class="reviews__wrapper">
@@ -258,7 +309,7 @@
 
 
   <!-- Bottom -->
-  <section class="bottom section section_blue">
+  <section id="contacts_area" class="bottom section section_blue">
   <div class="container">
     <div class="bottom__wrapper">
       <div class="bottom__left">
@@ -268,7 +319,6 @@
           A&nbsp;tech enthusiast group for highly-skilled immigrants: those who like to&nbsp;support others, who are
           already in&nbsp;or are interested in&nbsp;pivoting to&nbsp;tech careers and startups.
         </p>
-        
       </div>
       <div class="bottom__right">
         <img src="img/css/components/section-bottom/bottom.png" alt="people" class="bottom__image" />
@@ -297,5 +347,24 @@
   </div>
 </footer>
 
+
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
