@@ -1,46 +1,62 @@
 .header {
-  position: fixed;
+  top: 0;
   width: 100%;
-  z-index: 100;
-  padding: 20px 0;
-  background-color: @blue-normal;
-}
-
-.header__wrapper {
-  display: flex;
-  align-items: center;
-  column-gap: 20px;
-
-  @media @screen-gt-s {
-    column-gap: 30px;
-  }
+  position: fixed;
+  z-index: 999;
+  transition: all 0.4s ease-in-out;
 }
 
 .header__logo {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: url('../img/css/components/header/logo.svg') no-repeat center / contain;
-  cursor: pointer;
-
-  @media @screen-gt-s {
-    width: 60px;
-    height: 60px;
-  }
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  padding: 0;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
 }
 
-.header__list {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+.header__logo-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header.menu-shrink {
+  background-color: #fff;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
+  width: 100%;
 }
 
 .header__link {
-  color: @orange;
+  color: @blue-light;
+  padding: 0;
+  transition: all 0.5s ease 0s;
+
   &:hover {
-    color: @orange-hover;
+    color: @blue-light-hover;
+    text-decoration: underline;
   }
-  &:visited {
-    color: @orange-active;
+  &:active {
+    color: @blue-light-active;
+    text-decoration: underline;
+  }
+  &:focus {
+    color: @blue-light;
+    text-decoration: none;
+  }
+}
+
+.header.menu-shrink .header__link {
+  color: @blue-normal;
+
+  &:hover {
+    color: @blue-normal-hover;
+    text-decoration: underline;
+  }
+  &:active {
+    color: @blue-normal-active;
+    text-decoration: underline;
+  }
+  &:focus {
+    color: @blue-normal;
+    text-decoration: none;
   }
 }

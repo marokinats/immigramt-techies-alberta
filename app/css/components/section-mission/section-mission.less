@@ -1,25 +1,65 @@
 .mission__wrapper {
   display: flex;
+  flex-direction: column;
 }
 
-.mission__left {
-  width: 40%;
-}
-
-.mission__right {
-  width: 60%;
+.mission__gap {
+  margin-top: 30px;
 }
 
 .mission__title {
-  color: @blue-dark;
-  margin: 30px 0 60px;
+  align-self: flex-end;
+  color: @orange-darker;
+  margin-bottom: 30px;
+  animation-delay: 0.2s;
 }
 
 .mission__subtitle {
+  align-self: flex-start;
   margin-bottom: 30px;
+  animation-delay: 0.3s;
+}
+
+.mission__card {
+  background-color: @orange-light;
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  padding: 40px 20px 40px;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  z-index: 1;
+  cursor: pointer;
+  min-height: 300px;
+  height: 100%;
+
+  @media @screen-gt-l {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  @media @screen-gt-xl {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  &:hover {
+    background-color: @orange-light-active;
+    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.mission__card-icon {
+  margin-bottom: 22px;
+
+  & i {
+    color: @blue-normal;
+    font-size: 61px;
+    line-height: 70px;
+    transition: all 0.3s ease 0s;
+  }
 }
 
 .mission__text {
+  font-size: 14px;
   margin-bottom: 10px;
 
   &:last-child {

@@ -50,6 +50,7 @@ button {
   background-color: transparent;
   cursor: pointer;
 }
+
 body {
   font-size: 16px;
   line-height: 2;
@@ -106,13 +107,13 @@ section {
   line-height: 1.5;
   letter-spacing: 2px;
 
-  @media @screen-gt-xs {
+  @media @screen-gt-s {
     font-size: 32px;
   }
-  @media @screen-gt-s {
+  @media @screen-gt-m {
     font-size: 42px;
   }
-  @media @screen-gt-m {
+  @media @screen-gt-l {
     font-size: 46px;
   }
 }
@@ -125,13 +126,13 @@ section {
   line-height: 1.25;
   letter-spacing: 2px;
 
-  @media @screen-gt-xs {
+  @media @screen-gt-s {
     font-size: 28px;
   }
-  @media @screen-gt-s {
+  @media @screen-gt-m {
     font-size: 32px;
   }
-  @media @screen-gt-m {
+  @media @screen-gt-l {
     font-size: 36px;
   }
 }
@@ -144,13 +145,13 @@ section {
   line-height: 1;
   letter-spacing: 2px;
 
-  @media @screen-gt-xs {
+  @media @screen-gt-s {
     font-size: 20px;
   }
-  @media @screen-gt-s {
+  @media @screen-gt-m {
     font-size: 24px;
   }
-  @media @screen-gt-m {
+  @media @screen-gt-l {
     font-size: 30px;
   }
 }
@@ -163,13 +164,13 @@ section {
   line-height: 1;
   letter-spacing: 2px;
 
-  @media @screen-gt-xs {
+  @media @screen-gt-s {
     font-size: 20px;
   }
-  @media @screen-gt-s {
+  @media @screen-gt-m {
     font-size: 24px;
   }
-  @media @screen-gt-m {
+  @media @screen-gt-l {
     font-size: 28px;
   }
 }
@@ -201,10 +202,10 @@ section {
   transition: 0.3s ease-out;
 
   &_blue {
-    color: @orange;
-    background-color: @blue-normal;
+    color: @orange-darker;
+    background-color: @blue-light;
     &:hover {
-      background-color: @blue-normal-hover;
+      background-color: @blue-light-hover;
       box-shadow: 0px 0px 10px 2px @orange-hover;
     }
   }

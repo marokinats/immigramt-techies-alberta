@@ -1,18 +1,29 @@
 @page-min-width: 320px;
 
 @breakpoint-xs-end: (@breakpoint-s-start - 1px);
-@breakpoint-s-start: 700px;
+@breakpoint-s-start: 576px;
 @breakpoint-s-end: (@breakpoint-m-start - 1px);
-@breakpoint-m-start: 1020px;
+@breakpoint-m-start: 768px;
 @breakpoint-m-end: (@breakpoint-l-start - 1px);
-@breakpoint-l-start: 1340px;
+@breakpoint-l-start: 992px;
+@breakpoint-l-end: (@breakpoint-xl-start - 1px);
+@breakpoint-xl-start: 1200px;
+@breakpoint-xl-end: (@breakpoint-xxl-start - 1px);
+@breakpoint-xxl-start: 1440px;
 
-@screen-lt-s: ~'(max-width: @{breakpoint-xs-end})';
-@screen-gt-xs: ~'(min-width: @{breakpoint-s-start})';
-@screen-s: ~'(min-width: @{breakpoint-s-start}) and (max-width: @{breakpoint-s-end})';
-@screen-lt-m: ~'(max-width: @{breakpoint-s-end})';
-@screen-gt-s: ~'(min-width: @{breakpoint-m-start})';
-@screen-m: ~'(min-width: @{breakpoint-m-start}) and (max-width: @{breakpoint-m-end})';
-@screen-gt-m: ~'(min-width: @{breakpoint-l-start})';
+@screen-lt-s: ~'(max-width: @{breakpoint-xs-end})'; // lt 575
+@screen-gt-s: ~'(min-width: @{breakpoint-s-start})'; // gt 576
+@screen-s: ~'(min-width: @{breakpoint-s-start}) and (max-width: @{breakpoint-s-end})'; // gt 576 lt 767
+@screen-lt-m: ~'(max-width: @{breakpoint-s-end})'; // lt 767
+@screen-gt-m: ~'(min-width: @{breakpoint-m-start})'; // gt 768
+@screen-m: ~'(min-width: @{breakpoint-m-start}) and (max-width: @{breakpoint-m-end})'; // gt 768 lt 991
+@screen-lt-l: ~'(max-width: @{breakpoint-m-end})'; // lt 991
+@screen-gt-l: ~'(min-width: @{breakpoint-l-start})'; // gt 992
+@screen-l: ~'(min-width: @{breakpoint-l-start}) and (max-width: @{breakpoint-l-end})'; // gt 992 lt 1199
+@screen-lt-xl: ~'(max-width: @{breakpoint-l-end})'; // lt 1199
+@screen-gt-xl: ~'(min-width: @{breakpoint-xl-start})'; // gt 1200
+@screen-xl: ~'(min-width: @{breakpoint-xl-start}) and (max-width: @{breakpoint-xl-end})'; // gt 1200 lt 1439
+@screen-lt-xxl: ~'(max-width: @{breakpoint-xl-end})'; // lt 1399
+@screen-gt-xxl: ~'(min-width: @{breakpoint-xxl-start})'; // gt 1440
 
 @resolution-2x: ~'only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi)';
