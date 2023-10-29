@@ -70,20 +70,37 @@
   <div class="main__background">
     <div class="container">
       <div class="main__content">
-        <h3 class="wow animate__animated animate__fadeInLeft main__subtitle section__subtitle section__subtitle_orange">
+        <h3
+          class="wow animate__animated animate__fadeInLeft main__subtitle main__subtitle_desktop section__subtitle section__subtitle_orange"
+        >
           Who we are
         </h3>
         <h1 class="wow animate__animated animate__fadeInLeft h1 main__title">Immigrant Techies</h1>
-        <p class="wow animate__animated animate__fadeInLeft main__text">
+        <p class="wow animate__animated animate__fadeInLeft main__text main__text_desktop">
           A&nbsp;tech enthusiast group for highly-skilled immigrants: those who like to&nbsp;support others, who are
           already in&nbsp;or are interested in&nbsp;pivoting to&nbsp;tech careers and startups. We&nbsp;will
           be&nbsp;hosting online and in-person events on&nbsp;a range of&nbsp;tech topics. Looking forward
           to&nbsp;exploring and networking with immigrants far and wide.
         </p>
-        <button type="button" class="wow animate__animated animate__fadeInUp button button_blue main__button">
-          Join our talent pool
-        </button>
+        <div class="wow animate__animated animate__fadeInUp main__button-container">
+          <a href="https://forms.gle/uMwsjLrQkCZNJ1Ca6" target="_blank" class="button button_blue main__button">
+            Join our talent pool
+          </a>
+        </div>
       </div>
+    </div>
+  </div>
+  <div class="main__content-mobile">
+    <div class="container">
+      <h3 class="wow animate__animated animate__fadeInLeft main__subtitle section__subtitle section__subtitle_orange">
+        Who we are
+      </h3>
+      <p class="main__text">
+        A&nbsp;tech enthusiast group for highly-skilled immigrants: those who like to&nbsp;support others, who are
+        already in&nbsp;or are interested in&nbsp;pivoting to&nbsp;tech careers and startups. We&nbsp;will
+        be&nbsp;hosting online and in-person events on&nbsp;a range of&nbsp;tech topics. Looking forward
+        to&nbsp;exploring and networking with immigrants far and wide.
+      </p>
     </div>
   </div>
 </section>
@@ -92,7 +109,7 @@
   <!-- About Us -->
   <section id="about_area" class="about-us section section_orange">
   <div class="container">
-    <h2 class="h2 about-us__title">Our story</h2>
+    <h2 class="h2 about-us__title section__title section__title_blue">Our story</h2>
     <div class="wow animate__animated animate__fadeInRight about-us__wrapper about-us__wrapper_1">
       <div class="about-us__sm">
         <div class="about-us__image">
@@ -111,7 +128,7 @@
       </div>
     </div>
     <div class="wow animate__animated animate__fadeInLeft about-us__wrapper about-us__wrapper_2">
-      <div class="about-us__lg">
+      <div class="about-us__lg order-sm-1 order-2">
         <p class="about-us__text about-us__text_left">
           However, amidst the warmth and welcome, Wunmi couldn&rsquo;t ignore a&nbsp;significant issue&nbsp;&mdash; the
           lack of&nbsp;diversity in&nbsp;the Alberta tech community, with only a&nbsp;handful of&nbsp;individuals who
@@ -121,7 +138,7 @@
           Alberta was born.
         </p>
       </div>
-      <div class="about-us__sm">
+      <div class="about-us__sm order-sm-2 order-1">
         <div class="about-us__image">
           <img src="img/css/components/section-about-us/about-us-2.jpg" alt="about us" class="about-us__img" />
         </div>
@@ -140,18 +157,23 @@
       >
         What we represent
       </h3>
-      <h2 class="wow animate__animated animate__fadeInLeft h2 mission__title">Our mission</h2>
+      <h2 class="wow animate__animated animate__fadeInLeft h2 mission__title section__title section__title_orange">
+        Our mission
+      </h2>
       <div class="row">
-        <div class="col col-md-6 col-lg-3">
-          <div class="mission__card">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="wow animate__animated animate__fadeInUp mission__card">
             <div class="mission__card-icon">
               <i class="ti-car"></i>
             </div>
             <p class="mission__text">A&nbsp;bridge into Alberta&rsquo;s innovation community</p>
           </div>
         </div>
-        <div class="col col-md-6 col-lg-3">
-          <div class="mission__card">
+        <div class="col-12 d-sm-none">
+          <div class="mission__gap"></div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="wow animate__animated animate__fadeInUp mission__card">
             <div class="mission__card-icon">
               <i class="ti-world"></i>
             </div>
@@ -161,16 +183,19 @@
         <div class="col-12 d-lg-none">
           <div class="mission__gap"></div>
         </div>
-        <div class="col col-md-6 col-lg-3">
-          <div class="mission__card">
+        <div class="col col-sm-6 col-lg-3">
+          <div class="wow animate__animated animate__fadeInUp mission__card">
             <div class="mission__card-icon">
               <i class="ti-comments-smiley"></i>
             </div>
             <p class="mission__text">Opportunities for networking and mentorship</p>
           </div>
         </div>
-        <div class="col col-md-6 col-lg-3">
-          <div class="mission__card">
+        <div class="col-12 d-sm-none">
+          <div class="mission__gap"></div>
+        </div>
+        <div class="col col-sm-6 col-lg-3">
+          <div class="wow animate__animated animate__fadeInUp mission__card">
             <div class="mission__card-icon">
               <i class="ti-hand-open"></i>
             </div>
@@ -189,7 +214,7 @@
   <section id="goals_area" class="goals">
   <div class="container">
     <div class="goals__wrapper">
-      <h2 class="h2 goals__title">Our goals</h2>
+      <h2 class="h2 goals__title section__title section__title_blue">Our goals</h2>
       <p class="goals__text goals__text_left">
         Providing community and support for professional immigrants who desire to&nbsp;pivot to&nbsp;or&nbsp;advance
         in&nbsp;tech careers.
@@ -210,9 +235,34 @@
   <!-- Events -->
   <section id="events_area" class="events section section_blue">
   <div class="container">
-    <h2 class="h2 events__title">Our events</h2>
+    <h2 class="h2 events__title section__title section__title_orange">Our events</h2>
     <div class="events__wrapper">
       <div class="events__tabs">
+        <input type="radio" name="tabs" id="tabone" checked="checked" />
+        <label for="tabone" class="events__tabs-label">Upcoming</label>
+        <div class="events__tab">
+          <h4 class="h4 events__tab-title">International students connect: your place in&nbsp;Alberta tech</h4>
+          <div class="events__tab-container">
+            <div class="events__tab-image">
+              <img src="img/css/components/section-events/event-2023-11-01.jpg" alt="event-2023-11-01" />
+            </div>
+            <div class="events__tab-details">
+              <div class="events__tab-text events__tab-text_title">Date:</div>
+              <p class="events__tab-text">2023, November&nbsp;1</p>
+              <div class="events__tab-text events__tab-text_title">Time:</div>
+              <p class="events__tab-text">4:00 PM to 6:00 PM MST</p>
+              <a
+                href="http://lu.ma/immigranttechies"
+                target="_blank"
+                class="wow animate__animated animate__fadeInUp button button_blue events__tab-button"
+              >
+                Register
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 
         <input type="radio" name="tabs" id="tabone" checked="checked" />
         <label for="tabone" class="events__tabs-label">Upcoming</label>
         <div class="events__tab">
@@ -222,7 +272,6 @@
             <img src="img/css/components/section-events/event-2023-06-27.jpg" alt="event-2023-06-27" />
           </div>
         </div>
-
         <input type="radio" name="tabs" id="tabtwo" />
         <label for="tabtwo" class="events__tabs-label">Past</label>
         <div class="events__tab">
@@ -233,7 +282,7 @@
           <div class="events__tab-image">
             <img src="img/css/components/section-events/event-2023-07-26.jpg" alt="event-2023-07-26" />
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -241,87 +290,44 @@
 
 
   <!-- Reviews -->
-  <section id="reviews_area" class="reviews section section_orange">
+  
+
+  <!-- Volunteer -->
+  <section id="volunteer_area" class="volunteer">
   <div class="container">
-    <h2 class="h2 reviews__title">Reviews</h2>
-    <div class="reviews__wrapper">
-      <div class="reviews__container">
-        <div class="reviews__card">
-          <h4 class="h4 reviews__card-title">Alice</h4>
-          <div class="reviews__card-bar">
-            <div class="reviews__card-bar-empty"></div>
-            <div class="reviews__card-bar-filled"></div>
-          </div>
-          <div class="reviews__card-text">
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Curabitur lorem ex,
-            porta eget venenatis at, venenatis non velit.
-          </div>
-          <div class="reviews__card-circle">
-            <img src="img/css/components/section-reviews/review-default.svg" alt="" class="reviews__image" />
-          </div>
-        </div>
-        <div class="reviews__card">
-          <h4 class="h4 reviews__card-title">Andy Nguyen</h4>
-          <div class="reviews__card-bar">
-            <div class="reviews__card-bar-empty"></div>
-            <div class="reviews__card-bar-filled"></div>
-          </div>
-          <div class="reviews__card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id fringilla enim, et gravida massa. Vivamus
-            tortor nibh, dictum sit amet congue nec, placerat sollicitudin nibh.
-          </div>
-          <div class="reviews__card-circle">
-            <img src="img/css/components/section-reviews/review-default.svg" alt="" class="reviews__image" />
-          </div>
-        </div>
-        <div class="reviews__card">
-          <h4 class="h4 reviews__card-title">Jin Meng</h4>
-          <div class="reviews__card-bar">
-            <div class="reviews__card-bar-empty"></div>
-            <div class="reviews__card-bar-filled"></div>
-          </div>
-          <div class="reviews__card-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id fringilla enim, et gravida massa.
-          </div>
-          <div class="reviews__card-circle">
-            <img src="img/css/components/section-reviews/review-default.svg" alt="" class="reviews__image" />
-          </div>
-        </div>
-        <div class="reviews__card">
-          <h4 class="h4 reviews__card-title">Anoop Malhotra</h4>
-          <div class="reviews__card-bar">
-            <div class="reviews__card-bar-empty"></div>
-            <div class="reviews__card-bar-filled"></div>
-          </div>
-          <div class="reviews__card-text">
-            Aenean accumsan non lorem sit amet commodo. Curabitur leo risus, ultrices nec dignissim sed, fermentum
-            iaculis est. Quisque nec velit a ante posuere venenatis. Quisque pellentesque turpis at urna ultricies, sed
-            blandit enim sodales.
-          </div>
-          <div class="reviews__card-circle">
-            <img src="img/css/components/section-reviews/review-default.svg" alt="" class="reviews__image" />
-          </div>
-        </div>
-      </div>
+    <h2 class="h2 volunteer__title section__title section__title_blue">Volunteer with Us</h2>
+    <div class="volunteer__wrapper">
+      <p class="volunteer__text volunteer__text_right">
+        We&rsquo;re here to&nbsp;share insights, experiences, and support one another as&nbsp;we&nbsp;navigate the
+        unique challenges and opportunities that come with being immigrants in&nbsp;the tech world.
+      </p>
+      <p class="volunteer__text volunteer__text_left">
+        As&nbsp;our journey of&nbsp;growth and evolution continues, we&nbsp;are seeking individuals to&nbsp;embrace this
+        vision and expand its reach across the province of&nbsp;Alberta.
+      </p>
+      <h4 class="h4">JOIN US&nbsp;AS&nbsp;WE&nbsp;SHAPE THE FUTURE OF&nbsp;IMMIGRANT TECHIES!</h4>
+      <a
+        href="https://docs.google.com/forms/d/e/1FAIpQLSf-0oBxpojeHPpz9C_AgQTP6aoHNf4XrjfglqS-Wj3C436vzA/viewform"
+        target="_blank"
+        class="wow animate__animated animate__fadeInUp button button_blue events__tab-button"
+      >
+        Volunteer with us
+      </a>
     </div>
   </div>
 </section>
-
 
   <!-- Bottom -->
   <section id="contacts_area" class="bottom section section_blue">
   <div class="container">
     <div class="bottom__wrapper">
       <div class="bottom__left">
-        <h1 class="h1 bottom__title">Immigrant Techies</h1>
+        <h2 class="h1 bottom__title">Immigrant Techies</h2>
         <button type="button" class="button button_orange bottom__button">Join our talent pool</button>
         <p class="bottom__text">
           A&nbsp;tech enthusiast group for highly-skilled immigrants: those who like to&nbsp;support others, who are
           already in&nbsp;or are interested in&nbsp;pivoting to&nbsp;tech careers and startups.
         </p>
-      </div>
-      <div class="bottom__right">
-        <img src="img/css/components/section-bottom/bottom.png" alt="people" class="bottom__image" />
       </div>
     </div>
   </div>
