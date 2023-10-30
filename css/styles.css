@@ -195,6 +195,7 @@ section {
 }
 .button {
   font-family: 'Furore';
+  letter-spacing: 1px;
   font-weight: normal;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -208,7 +209,7 @@ section {
   transition: 0.3s ease-out;
   text-decoration: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .button {
     padding: 10px 40px;
   }
@@ -1733,13 +1734,17 @@ section {
 }
 .main__text {
   color: #fff8ef;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
   max-width: 100%;
 }
 @media (min-width: 576px) {
   .main__text {
     max-width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .main__text {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
   }
 }
 .main__text_desktop {
@@ -1755,8 +1760,14 @@ section {
 }
 .main__button-container {
   align-self: center;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+@media (min-width: 992px) {
+  .main__button-container {
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
+  }
 }
 .main__button {
   background-color: #ebedf3;
@@ -1775,13 +1786,19 @@ section {
   }
 }
 .about-us__wrapper_1 {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
   margin-bottom: 30px;
 }
-.about-us__wrapper_2 {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+@media (min-width: 992px) {
+  .about-us__wrapper_1 {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
+}
+@media (min-width: 992px) {
+  .about-us__wrapper_2 {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
 }
 .about-us__sm {
   width: 100%;
@@ -1893,14 +1910,22 @@ section {
 .mission__title {
   align-self: flex-end;
   margin-bottom: 30px;
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+}
+@media (min-width: 992px) {
+  .mission__title {
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
 }
 .mission__subtitle {
   align-self: flex-start;
   margin-bottom: 30px;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+}
+@media (min-width: 992px) {
+  .mission__subtitle {
+    -webkit-animation-delay: 0.3s;
+            animation-delay: 0.3s;
+  }
 }
 .mission__card {
   background-color: #fff8ef;
@@ -2051,6 +2076,7 @@ section {
   padding: 1rem 2rem;
   margin-right: 0.2rem;
   margin-bottom: 0;
+  font-family: 'Furore';
   color: #131a2e;
   cursor: pointer;
   background-color: #fff8ef;
@@ -2080,10 +2106,6 @@ section {
   .events__tab,
   .events__tabs-label {
     order: initial;
-  }
-  .events__tabs-label {
-    width: 100%;
-    margin-left: 50px;
   }
 }
 .events__tab-image {
