@@ -2,12 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Immigrant techies</title>
+    <link rel="icon" href="/favicon.ico" />
+    <title>Immigrant Techies</title>
+    <meta
+      content="A tech enthusiast group for highly-skilled immigrants: those who like to support others, who are interested in pivoting to tech careers and startups."
+      name="description"
+    />
+    <meta content="Immigrant Techies" property="og:title" />
+    <meta
+      content="A tech enthusiast group for highly-skilled immigrants: those who like to support others, who are interested in pivoting to tech careers and startups."
+      property="og:description"
+    />
+    <meta content="Immigrant Techies" property="twitter:title" />
+    <meta
+      content="A tech enthusiast group for highly-skilled immigrants: those who like to support others, who are interested in pivoting to tech careers and startups."
+      property="twitter:description"
+    />
+    <meta property="og:type" content="website" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -32,34 +45,32 @@
   <!-- Header -->
   <header id="header" class="header">
   <div class="container">
-    <nav class="navbar navbar-expand-md">
-      <div class="container-fluid">
-        <a href="index.html" class="navbar-brand header__logo">
-          <img src="img/css/components/header/logo.svg" alt="Logo" class="header__logo-img" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon">
-            <!-- <i class="ti-menu"></i> -->
-          </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a href="#about_area" class="nav-link header__link">About</a></li>
-            <li class="nav-item"><a href="#mission_area" class="nav-link header__link">Mission</a></li>
-            <li class="nav-item"><a href="#goals_area" class="nav-link header__link">Goals</a></li>
-            <li class="nav-item"><a href="#events_area" class="nav-link header__link">Events</a></li>
-            <li class="nav-item"><a href="#reviews_area" class="nav-link header__link">Reviews</a></li>
-            <li class="nav-item"><a href="#contacts_area" class="nav-link header__link">Contacts</a></li>
-          </ul>
-        </div>
+    <nav class="navbar navbar-expand-lg">
+      <a href="index.html" class="navbar-brand header__logo">
+        <img src="img/css/components/header/logo.svg" alt="Logo" class="header__logo-img" />
+      </a>
+      <button
+        class="header-navbar__toggler d-block d-lg-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="header-navbar__toggler-icon">
+          <i class="ti-menu"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="header-navbar__nav navbar-nav flex-row flex-wrap ms-auto mt-2 mt-lg-0">
+          <li class="header-navbar__nav-item"><a href="#about_area" class="nav-link header__link">About</a></li>
+          <li class="header-navbar__nav-item"><a href="#mission_area" class="nav-link header__link">Mission</a></li>
+          <li class="header-navbar__nav-item"><a href="#goals_area" class="nav-link header__link">Goals</a></li>
+          <li class="header-navbar__nav-item"><a href="#events_area" class="nav-link header__link">Events</a></li>
+          <li class="header-navbar__nav-item"><a href="#volunteer_area" class="nav-link header__link">Volunteer</a></li>
+          <li class="header-navbar__nav-item"><a href="#contacts_area" class="nav-link header__link">Contacts</a></li>
+        </ul>
       </div>
     </nav>
   </div>
@@ -71,7 +82,7 @@
     <div class="container">
       <div class="main__content">
         <h3
-          class="wow animate__animated animate__fadeInLeft main__subtitle main__subtitle_desktop section__subtitle section__subtitle_orange"
+          class="wow animate__animated animate__fadeInLeft h3 main__subtitle main__subtitle_desktop section__subtitle section__subtitle_orange"
         >
           Who we are
         </h3>
@@ -92,7 +103,9 @@
   </div>
   <div class="main__content-mobile">
     <div class="container">
-      <h3 class="wow animate__animated animate__fadeInLeft main__subtitle section__subtitle section__subtitle_orange">
+      <h3
+        class="wow animate__animated animate__fadeInLeft h3 main__subtitle section__subtitle section__subtitle_orange"
+      >
         Who we are
       </h3>
       <p class="main__text">
@@ -112,11 +125,11 @@
     <h2 class="h2 about-us__title section__title section__title_blue">Our story</h2>
     <div class="wow animate__animated animate__fadeInRight about-us__wrapper about-us__wrapper_1">
       <div class="about-us__sm">
-        <div class="about-us__image">
-          <img src="img/css/components/section-about-us/about-us-1.jpg" alt="about us" class="about-us__img" />
+        <div class="about-us__image about-us__image_left">
+          <img src="img/css/components/section-about-us/about-us-1.jpg" alt="wunmi" class="about-us__img" />
         </div>
       </div>
-      <div class="about-us__lg">
+      <div class="about-us__lg about-us__lg_right">
         <p class="about-us__text about-us__text_right">
           In&nbsp;2019, Wunmi Adekanmbi took her first curious steps into the vibrant Alberta tech scene, little knowing
           the incredible journey that lay ahead. To&nbsp;her delight, she stumbled upon a&nbsp;thriving and innovative
@@ -139,8 +152,8 @@
         </p>
       </div>
       <div class="about-us__sm order-sm-2 order-1">
-        <div class="about-us__image">
-          <img src="img/css/components/section-about-us/about-us-2.jpg" alt="about us" class="about-us__img" />
+        <div class="about-us__image about-us__image_right">
+          <img src="img/css/components/section-about-us/about-us-2.jpg" alt="people hands" class="about-us__img" />
         </div>
       </div>
     </div>
@@ -161,7 +174,7 @@
         Our mission
       </h2>
       <div class="row">
-        <div class="col-12 col-sm-6 col-lg-3">
+        <div class="col-12 col-sm-6 col-xl-3">
           <div class="wow animate__animated animate__fadeInUp mission__card">
             <div class="mission__card-icon">
               <i class="ti-car"></i>
@@ -172,7 +185,7 @@
         <div class="col-12 d-sm-none">
           <div class="mission__gap"></div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-3">
+        <div class="col-12 col-sm-6 col-xl-3">
           <div class="wow animate__animated animate__fadeInUp mission__card">
             <div class="mission__card-icon">
               <i class="ti-world"></i>
@@ -180,10 +193,10 @@
             <p class="mission__text">An&nbsp;exploratory space for those interested in&nbsp;tech</p>
           </div>
         </div>
-        <div class="col-12 d-lg-none">
+        <div class="col-12 d-xl-none">
           <div class="mission__gap"></div>
         </div>
-        <div class="col col-sm-6 col-lg-3">
+        <div class="col col-sm-6 col-xl-3">
           <div class="wow animate__animated animate__fadeInUp mission__card">
             <div class="mission__card-icon">
               <i class="ti-comments-smiley"></i>
@@ -194,7 +207,7 @@
         <div class="col-12 d-sm-none">
           <div class="mission__gap"></div>
         </div>
-        <div class="col col-sm-6 col-lg-3">
+        <div class="col col-sm-6 col-xl-3">
           <div class="wow animate__animated animate__fadeInUp mission__card">
             <div class="mission__card-icon">
               <i class="ti-hand-open"></i>
@@ -211,7 +224,7 @@
 
 
   <!-- Goals -->
-  <section id="goals_area" class="goals">
+  <section id="goals_area" class="goals section">
   <div class="container">
     <div class="goals__wrapper">
       <h2 class="h2 goals__title section__title section__title_blue">Our goals</h2>
@@ -239,14 +252,14 @@
     <div class="events__wrapper">
       <div class="events__tabs">
         <input type="radio" name="tabs" id="tabone" checked="checked" />
-        <label for="tabone" class="events__tabs-label">Upcoming</label>
+        <label for="tabone" class="h4 events__tabs-label">Upcoming</label>
         <div class="events__tab">
-          <h4 class="h4 events__tab-title">International students connect: your place in&nbsp;Alberta tech</h4>
           <div class="events__tab-container">
             <div class="events__tab-image">
               <img src="img/css/components/section-events/event-2023-11-01.jpg" alt="event-2023-11-01" />
             </div>
             <div class="events__tab-details">
+              <h4 class="h4 events__tab-title">International students connect: your place in&nbsp;Alberta tech</h4>
               <div class="events__tab-text events__tab-text_title">Date:</div>
               <p class="events__tab-text">2023, November&nbsp;1</p>
               <div class="events__tab-text events__tab-text_title">Time:</div>
@@ -293,9 +306,9 @@
   
 
   <!-- Volunteer -->
-  <section id="volunteer_area" class="volunteer">
+  <section id="volunteer_area" class="volunteer section">
   <div class="container">
-    <h2 class="h2 volunteer__title section__title section__title_blue">Volunteer with Us</h2>
+    <h2 class="h2 volunteer__title section__title section__title_blue">Volunteer with&nbsp;Us</h2>
     <div class="volunteer__wrapper">
       <p class="volunteer__text volunteer__text_right">
         We&rsquo;re here to&nbsp;share insights, experiences, and support one another as&nbsp;we&nbsp;navigate the
@@ -338,18 +351,28 @@
 <!-- Footer -->
 <footer class="footer">
   <div class="container">
-    <div class="footer__content">
-      <div class="footer__socials">
-        <a href="/" class="footer__socials-link footer__socials-link_fb"></a>
-        <a href="/" class="footer__socials-link footer__socials-link_in"></a>
-        <a href="/" class="footer__socials-link footer__socials-link_inst"></a>
+    <div class="footer__wrapper">
+      <div class="footer__content">
+        <div class="footer__socials">
+          <a
+            href="https://www.facebook.com/ImmigrantTech"
+            target="_blank"
+            class="footer__socials-link footer__socials-link_fb"
+          ></a>
+          <a
+            href="https://www.linkedin.com/company/immigrant-techies-alberta/"
+            target="_blank"
+            class="footer__socials-link footer__socials-link_in"
+          ></a>
+        </div>
+        <div class="footer__info">&copy;2023 Immigrant Techies</div>
       </div>
       <div class="footer__contacts">
-        <h4 class="h4">Contacts:</h4>
-        <a href="mailto:immigranttechiesab@gmail.com" class="footer__email">immigranttechiesab@gmail.com</a>
+        <a href="https://forms.gle/2dYGpneCRRtYKMx77" target="_blank" class="button button_orange footer__email"
+          >Join our mailing list</a
+        >
       </div>
     </div>
-    <div class="footer__info">©2023&nbsp;Immigrant Techies. <a href="/" class="footer__politics">Our Policy</a></div>
   </div>
 </footer>
 
