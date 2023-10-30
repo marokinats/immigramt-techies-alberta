@@ -19,16 +19,12 @@
 
   async function clickHandler(e) {
     e.preventDefault();
-    const staticBg = document.querySelectorAll('.goals__bg');
-
-    staticBg.forEach((element) => element.classList.add('d-none'));
     const href = this.getAttribute('href');
     const offsetTop = document.querySelector(href).offsetTop - 85;
     await scroll({
       top: offsetTop,
       behavior: 'smooth'
     });
-    staticBg.forEach((element) => element.classList.remove('d-none'));
   }
 
   $(document).on('click', '.navbar-collapse.show', function (e) {

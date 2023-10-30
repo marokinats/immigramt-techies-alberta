@@ -1996,17 +1996,21 @@ section {
   margin-bottom: 0;
 }
 .goals {
+  background: rgba(0, 0, 0, 0) url('../img/css/components/section-goals/goals-bg.jpg') no-repeat fixed 20% center;
+  background-size: cover;
   position: relative;
   z-index: 1;
 }
 @media (min-width: 576px) {
   .goals {
     padding: 100px 0;
+    background-position-x: 20%;
   }
 }
 @media (min-width: 992px) {
   .goals {
     padding: 100px 0;
+    background-position-x: center;
   }
 }
 .goals::after {
@@ -2019,25 +2023,6 @@ section {
   top: 0;
   width: 100%;
   z-index: -1;
-}
-.goals__bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0) url('../img/css/components/section-goals/goals-bg.jpg') no-repeat 20% center / cover;
-  z-index: -1;
-}
-@media (min-width: 576px) {
-  .goals__bg {
-    background-position-x: 20%;
-  }
-}
-@media (min-width: 992px) {
-  .goals__bg {
-    background-position-x: center;
-  }
 }
 .goals__wrapper {
   display: flex;
