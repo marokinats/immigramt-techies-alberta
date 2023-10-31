@@ -1,24 +1,54 @@
 .footer {
   padding: 20px 0;
   background-color: @blue-normal;
+  position: relative;
+  z-index: 2;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media @screen-gt-s {
+    flex-direction: row;
+  }
 }
 
 .footer__content {
-  display: flex;
-}
-
-.footer__socials {
-  width: 500px;
+  width: fit-content;
   display: flex;
   align-items: center;
   gap: 20px;
+  order: 2;
+
+  @media @screen-gt-s {
+    flex-direction: column;
+    align-items: flex-start;
+    order: 1;
+  }
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  @media @screen-gt-s {
+    gap: 20px;
+  }
 }
 
 .footer__socials-link {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
+
+  @media @screen-gt-s {
+    width: 50px;
+    height: 50px;
+  }
   &:hover,
   &:active,
   &:visited {
@@ -30,30 +60,25 @@
   &_in {
     background: url('../img/css/components/footer/in.svg') no-repeat center center / cover;
   }
-  &_inst {
-    background: url('../img/css/components/footer/inst.svg') no-repeat center center / cover;
-  }
 }
 
-.footer__email {
-  color: @orange;
-  &:hover {
-    color: @orange-hover;
-    text-decoration: underline;
-  }
-  &:visited,
-  &:active {
-    color: @orange-active;
-    text-decoration: none;
+.footer__contacts {
+  order: 1;
+  margin: 0 auto;
+
+  @media @screen-gt-s {
+    width: fit-content;
+    margin: 0 0 0 auto;
+    order: 2;
   }
 }
 
 .footer__info {
-  margin-top: 10px;
   color: @white;
-}
+  font-weight: normal;
+  font-size: 14px;
 
-.footer__politics {
-  text-decoration: underline;
-  .gradient-text(@gradient-user-default-color, @gradient-user);
+  @media @screen-gt-s {
+    font-size: 16px;
+  }
 }
