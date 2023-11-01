@@ -570,15 +570,6 @@ section {
 .main__subtitle {
   margin-bottom: 30px;
 }
-.main__subtitle_desktop {
-  display: none;
-  margin-bottom: 0;
-}
-@media (min-width: 576px) {
-  .main__subtitle_desktop {
-    display: block;
-  }
-}
 .main__title {
   color: #ebedf3;
   align-self: flex-end;
@@ -589,9 +580,22 @@ section {
     margin-bottom: 60px;
   }
 }
-.main__title span {
+.main__title-lg {
   color: #fff8ef;
   text-shadow: 1px 1px 2px #fcbc5c;
+}
+.main__title-sm {
+  font-size: 26px;
+}
+@media (min-width: 768px) {
+  .main__title-sm {
+    font-size: 32px;
+  }
+}
+@media (min-width: 992px) {
+  .main__title-sm {
+    font-size: 40px;
+  }
 }
 .main__title-second {
   color: #ebedf3;
