@@ -75,14 +75,14 @@
 .main__subtitle {
   margin-bottom: 30px;
 
-  &_desktop {
-    display: none;
-    margin-bottom: 0;
+  // &_desktop {
+  //   display: none;
+  //   margin-bottom: 0;
 
-    @media @screen-gt-s {
-      display: block;
-    }
-  }
+  //   @media @screen-gt-s {
+  //     display: block;
+  //   }
+  // }
 }
 
 .main__title {
@@ -93,10 +93,21 @@
   @media @screen-gt-xxl {
     margin-bottom: 60px;
   }
+}
 
-  span {
-    color: @orange-light;
-    text-shadow: 1px 1px 2px @orange;
+.main__title-lg {
+  color: @orange-light;
+  text-shadow: 1px 1px 2px @orange;
+}
+
+.main__title-sm {
+  font-size: 26px;
+
+  @media @screen-gt-m {
+    font-size: 32px;
+  }
+  @media @screen-gt-l {
+    font-size: 40px;
   }
 }
 
