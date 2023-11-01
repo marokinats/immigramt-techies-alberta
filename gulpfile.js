@@ -4,7 +4,6 @@ const directories = {
   production: 'dist',
   development: 'app',
   components: 'components',
-  audio: 'audio',
   styles: 'css',
   fonts: 'fonts',
   images: 'img',
@@ -13,23 +12,20 @@ const directories = {
 
 const paths = {
   source: {
-    html: `${directories.development}/*.html`,
-    audio: `${directories.development}/${directories.styles}/${directories.components}/**/*.{mp3,ogg,m4r,wav}`,
+    html: `${directories.development}/*.{html,ico}`,
     styles: `${directories.development}/${directories.styles}/styles.less`,
     fonts: `${directories.development}/${directories.fonts}/**/*.{woff2,woff,ttf}`,
     images: `${directories.development}/${directories.styles}/${directories.components}/**/*.{webp,svg,png,jpg}`,
-    scripts: `${directories.development}/${directories.scripts}/{main,lottie}.js`
+    scripts: `${directories.development}/${directories.scripts}/main.js`
   },
   watch: {
     html: `${directories.development}/**/*.html`,
-    audio: `${directories.development}/${directories.styles}/${directories.components}/**/*.{mp3,ogg,m4r,wav}`,
     styles: `${directories.development}/{${directories.styles},${directories.components}}/**/*.less`,
     images: `${directories.development}/${directories.styles}/${directories.components}/**/*.{webp,svg,png,jpg}`,
     scripts: `${directories.development}/${directories.scripts}/**/*.js`
   },
   build: {
     html: `${directories.production}`,
-    audio: `${directories.production}/${directories.audio}/${directories.styles}/${directories.components}`,
     styles: `${directories.production}/${directories.styles}`,
     fonts: `${directories.production}/${directories.fonts}`,
     images: `${directories.production}/${directories.images}/${directories.styles}/${directories.components}`,
@@ -63,8 +59,6 @@ const server = () =>
 const html = () =>
   gulp.src(paths.source.html).pipe(fileinclude()).pipe(gulp.dest(paths.build.html)).pipe(browsersync.stream());
 
-const audio = () => gulp.src(paths.source.audio).pipe(gulp.dest(paths.build.audio)).pipe(browsersync.stream());
-
 const postcssPlugins = [autoprefixer()];
 
 const styles = () =>
@@ -91,7 +85,6 @@ const scripts = () => gulp.src(paths.source.scripts).pipe(gulp.dest(paths.build.
 
 const watch = () => {
   gulp.watch([paths.watch.html], html);
-  gulp.watch([paths.watch.audio], audio);
   gulp.watch([paths.watch.styles], styles);
   gulp.watch([paths.watch.images], images);
   gulp.watch([paths.watch.scripts], scripts);
@@ -99,7 +92,7 @@ const watch = () => {
 
 const clean = () => del(paths.clean);
 
-const production = gulp.series(clean, gulp.parallel(html, audio, styles, fonts, images, scripts));
+const production = gulp.series(clean, gulp.parallel(html, styles, fonts, images, scripts));
 const development = gulp.parallel(production, watch, server);
 
 export default development;

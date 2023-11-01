@@ -1,0 +1,65 @@
+.volunteer {
+  background: rgba(0, 0, 0, 0) url('../img/css/components/section-volunteer/volunteer-bg.jpg') no-repeat fixed center
+    center / cover;
+  position: relative;
+  z-index: 2;
+
+  @media @screen-gt-s {
+    padding: 100px 0;
+  }
+
+  &::after {
+    background: @orange-light none repeat scroll 0 0;
+    content: '';
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.volunteer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.volunteer__title {
+  margin: 0 0 30px;
+}
+
+.volunteer__text {
+  width: 100%;
+  font-weight: 800;
+  margin-bottom: 60px;
+
+  &_left {
+    max-width: 100%;
+
+    @media @screen-gt-s {
+      max-width: 70%;
+    }
+  }
+
+  &_right {
+    max-width: 95%;
+    align-self: flex-end;
+    padding: 0 0 10px 20px;
+    box-shadow: -10px 10px 0px 0px @blue-dark;
+
+    @media @screen-gt-s {
+      max-width: 80%;
+      padding: 0 0 15px 25px;
+    }
+  }
+}
+.volunteer__button {
+  margin-top: 30px;
+  align-self: center;
+
+  @media @screen-gt-s {
+    margin-top: 60px;
+  }
+}
