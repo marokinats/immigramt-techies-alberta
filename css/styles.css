@@ -1072,6 +1072,15 @@ section {
   align-self: center;
   margin-top: 30px;
 }
+.events__tab-link {
+  display: block;
+  text-decoration: none;
+  color: #293762;
+}
+.events__tab-link:hover {
+  text-decoration: underline;
+  color: #212c4f;
+}
 .volunteer {
   background: rgba(0, 0, 0, 0) url('../img/css/components/section-volunteer/volunteer-bg.jpg') no-repeat fixed center center / cover;
   position: relative;
