@@ -986,15 +986,20 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 10px 15px;
   margin-right: 0.2rem;
   margin-bottom: 0;
   font-family: 'Furore';
   color: #131a2e;
   cursor: pointer;
-  background-color: #fff8ef;
+  background: #fff;
   font-weight: bold;
   transition: background ease 0.3s;
+}
+@media (min-width: 576px) {
+  .events__tabs-label {
+    padding: 16px 20px;
+  }
 }
 .events__tab {
   order: 9;
@@ -1010,16 +1015,10 @@ section {
   display: none;
 }
 .events__tabs input[type='radio']:checked + .events__tabs-label {
-  background: #fff;
+  background-color: #fff8ef;
 }
 .events__tabs input[type='radio']:checked + .events__tabs-label + .events__tab {
   display: block;
-}
-@media (max-width: 575px) {
-  .events__tab,
-  .events__tabs-label {
-    order: initial;
-  }
 }
 .events__tab-image {
   width: 100%;
