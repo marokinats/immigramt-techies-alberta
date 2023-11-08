@@ -29,15 +29,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 10px 15px;
   margin-right: 0.2rem;
   margin-bottom: 0;
   font-family: 'Furore';
   color: @blue-darker;
   cursor: pointer;
-  background-color: @orange-light;
+  background: @white;
   font-weight: bold;
   transition: background ease 0.3s;
+
+  @media @screen-gt-s {
+    padding: 16px 20px;
+  }
 }
 
 .events__tab {
@@ -56,18 +60,11 @@
 }
 
 .events__tabs input[type='radio']:checked + .events__tabs-label {
-  background: @white;
+  background-color: @orange-light;
 }
 
 .events__tabs input[type='radio']:checked + .events__tabs-label + .events__tab {
   display: block;
-}
-
-@media @screen-lt-s {
-  .events__tab,
-  .events__tabs-label {
-    order: initial;
-  }
 }
 
 .events__tab-image {
