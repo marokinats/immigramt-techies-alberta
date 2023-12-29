@@ -6,16 +6,20 @@
   min-height: 100vh;
   height: 100%;
   width: 100%;
-  background: @blue-dark url('../img/css/components/section-main/main-bg.jpg') no-repeat center top / cover;
+  background: @blue-dark url('../img/css/components/section-main/main-bg-1.jpg') no-repeat 45% top / cover;
   position: relative;
   z-index: 2;
 
+  @media @screen-gt-s {
+    background-position: 60% top;
+  }
+
   @media @screen-gt-l {
-    background-position: center 15%;
+    background-position: 60% 15%;
   }
 
   @media @screen-gt-xl {
-    background-position: center 20%;
+    background-position: center 40%;
   }
 
   &::after {
@@ -74,15 +78,6 @@
 
 .main__subtitle {
   margin-bottom: 30px;
-
-  // &_desktop {
-  //   display: none;
-  //   margin-bottom: 0;
-
-  //   @media @screen-gt-s {
-  //     display: block;
-  //   }
-  // }
 }
 
 .main__title {
