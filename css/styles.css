@@ -500,18 +500,23 @@ section {
   min-height: 100vh;
   height: 100%;
   width: 100%;
-  background: #293762 url('../img/css/components/section-main/main-bg.jpg') no-repeat center top / cover;
+  background: #293762 url('../img/css/components/section-main/main-bg-1.jpg') no-repeat 45% top / cover;
   position: relative;
   z-index: 2;
 }
+@media (min-width: 576px) {
+  .main__background {
+    background-position: 60% top;
+  }
+}
 @media (min-width: 992px) {
   .main__background {
-    background-position: center 15%;
+    background-position: 60% 15%;
   }
 }
 @media (min-width: 1200px) {
   .main__background {
-    background-position: center 20%;
+    background-position: center 40%;
   }
 }
 .main__background::after {
@@ -892,7 +897,7 @@ section {
   }
 }
 .goals {
-  background: rgba(0, 0, 0, 0) url('../img/css/components/section-goals/goals-bg.jpg') no-repeat fixed 20% center;
+  background: rgba(0, 0, 0, 0) url('../img/css/components/section-goals/goals-bg-1.jpg') no-repeat fixed center center;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -900,12 +905,11 @@ section {
 @media (min-width: 576px) {
   .goals {
     padding: 100px 0;
-    background-position-x: 20%;
+    background-position-x: 40%;
   }
 }
 @media (min-width: 992px) {
   .goals {
-    padding: 100px 0;
     background-position-x: center;
   }
 }
@@ -914,7 +918,7 @@ section {
   content: '';
   height: 100%;
   left: 0;
-  opacity: 0.8;
+  opacity: 0.7;
   position: absolute;
   top: 0;
   width: 100%;
