@@ -35,24 +35,29 @@
   font-size: 16px;
   color: @blue-light;
   padding: 0;
+  text-shadow: 1px 1px 2px @black;
   transition: all 0.5s ease 0s;
 
   &:hover {
     color: @blue-light-hover;
+    text-shadow: -1px -1px 2px @black;
     text-decoration: underline;
   }
   &:active {
     color: @blue-light-active;
+    text-shadow: none;
     text-decoration: underline;
   }
   &:focus {
     color: @blue-light;
+    text-shadow: -1px -1px 2px @black;
     text-decoration: none;
   }
 }
 
 .header.menu-shrink .header__link {
   color: @blue-normal;
+  text-shadow: none;
 
   &:hover {
     color: @blue-normal-hover;

@@ -6,20 +6,25 @@
   min-height: 100vh;
   height: 100%;
   width: 100%;
-  background: @blue-dark url('../img/css/components/section-main/main-bg-1.jpg') no-repeat 45% top / cover;
+  background: @blue-dark url('../img/css/components/section-main/main-bg-2.jpg') no-repeat center 140px / contain;
   position: relative;
   z-index: 2;
 
+  @media (max-width: 320px) {
+    background-position-y: top;
+  }
+
   @media @screen-gt-s {
-    background-position: 60% top;
+    background-position-y: 165px;
+  }
+
+  @media @screen-gt-m {
+    background-position-y: 71px;
   }
 
   @media @screen-gt-l {
-    background-position: 60% 15%;
-  }
-
-  @media @screen-gt-xl {
-    background-position: center 40%;
+    background-position-y: 40%;
+    background-size: cover;
   }
 
   &::after {
@@ -30,7 +35,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: -1;
   }
 }
@@ -42,7 +47,11 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
+
+  @media @screen-gt-s {
+    padding-bottom: 100px;
+  }
 
   @media @screen-gt-xl {
     padding-bottom: 80px;
@@ -71,7 +80,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: -1;
   }
 }
@@ -108,11 +117,12 @@
 
 .main__title-second {
   color: @blue-light;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
 
   @media @screen-gt-s {
     text-align: left;
+    margin-bottom: 20px;
   }
 
   @media @screen-gt-l {
