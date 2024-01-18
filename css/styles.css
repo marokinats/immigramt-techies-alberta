@@ -919,6 +919,54 @@ section {
     font-size: 20px;
   }
 }
+.programs__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.programs__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.programs__left {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .programs__left {
+    width: 60%;
+  }
+}
+.programs__right {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .programs__right {
+    width: 35%;
+    align-self: center;
+  }
+}
+.programs__logo {
+  max-width: 300px;
+  width: 100%;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.programs__button {
+  margin: 20px auto 0;
+}
+@media (min-width: 768px) {
+  .programs__button {
+    margin-top: 30px;
+  }
+}
+.programs__text {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .programs__text {
+    text-align: left;
+  }
+}
 .goals {
   background: rgba(0, 0, 0, 0) url('../img/css/components/section-goals/goals-bg.jpg') no-repeat fixed 20% center;
   background-size: cover;
