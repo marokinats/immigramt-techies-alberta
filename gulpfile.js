@@ -7,7 +7,8 @@ const directories = {
   styles: 'css',
   fonts: 'fonts',
   images: 'img',
-  scripts: 'js'
+  scripts: 'js',
+  jobs: 'jobs'
 };
 
 const paths = {
@@ -16,20 +17,23 @@ const paths = {
     styles: `${directories.development}/${directories.styles}/styles.less`,
     fonts: `${directories.development}/${directories.fonts}/**/*.{woff2,woff,ttf}`,
     images: `${directories.development}/${directories.styles}/${directories.components}/**/*.{webp,svg,png,jpg}`,
-    scripts: `${directories.development}/${directories.scripts}/main.js`
+    scripts: `${directories.development}/${directories.scripts}/main.js`,
+    jobs: `${directories.development}/${directories.jobs}/*.pdf`
   },
   watch: {
     html: `${directories.development}/**/*.html`,
     styles: `${directories.development}/{${directories.styles},${directories.components}}/**/*.less`,
     images: `${directories.development}/${directories.styles}/${directories.components}/**/*.{webp,svg,png,jpg}`,
-    scripts: `${directories.development}/${directories.scripts}/**/*.js`
+    scripts: `${directories.development}/${directories.scripts}/**/*.js`,
+    jobs: `${directories.development}/${directories.jobs}/**/*.pdf`
   },
   build: {
     html: `${directories.production}`,
     styles: `${directories.production}/${directories.styles}`,
     fonts: `${directories.production}/${directories.fonts}`,
     images: `${directories.production}/${directories.images}/${directories.styles}/${directories.components}`,
-    scripts: `${directories.production}/${directories.scripts}`
+    scripts: `${directories.production}/${directories.scripts}`,
+    jobs: `${directories.development}/${directories.jobs}`
   },
   clean: `${directories.production}`
 };
@@ -83,16 +87,19 @@ const fonts = () => gulp.src(paths.source.fonts).pipe(gulp.dest(paths.build.font
 
 const scripts = () => gulp.src(paths.source.scripts).pipe(gulp.dest(paths.build.scripts)).pipe(browsersync.stream());
 
+const jobs = () => gulp.src(paths.source.jobs).pipe(gulp.dest(paths.build.jobs));
+
 const watch = () => {
   gulp.watch([paths.watch.html], html);
   gulp.watch([paths.watch.styles], styles);
   gulp.watch([paths.watch.images], images);
   gulp.watch([paths.watch.scripts], scripts);
+  gulp.watch([paths.watch.jobs], jobs);
 };
 
 const clean = () => del(paths.clean);
 
-const production = gulp.series(clean, gulp.parallel(html, styles, fonts, images, scripts));
+const production = gulp.series(clean, gulp.parallel(html, jobs, styles, fonts, images, scripts));
 const development = gulp.parallel(production, watch, server);
 
 export default development;
