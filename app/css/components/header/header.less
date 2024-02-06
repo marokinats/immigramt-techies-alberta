@@ -36,11 +36,11 @@
   color: @blue-light;
   padding: 0;
   text-shadow: 1px 1px 2px @black;
-  transition: all 0.5s ease 0s;
+  transition: all 0.3s ease;
+  text-decoration: none;
 
   &:hover {
     color: @blue-light-hover;
-    text-shadow: -1px -1px 2px @black;
     text-decoration: underline;
   }
   &:active {
@@ -52,6 +52,10 @@
     color: @blue-light;
     text-shadow: -1px -1px 2px @black;
     text-decoration: none;
+  }
+
+  &_highlighted {
+    color: @orange;
   }
 }
 
@@ -70,6 +74,13 @@
   &:focus {
     color: @blue-normal;
     text-decoration: none;
+  }
+
+  &_highlighted {
+    border: 1px solid @orange;
+    padding: 2px 7px 4px;
+    border-radius: 10px;
+    background-color: @orange;
   }
 }
 
@@ -91,17 +102,10 @@
 
 .header-navbar__nav-item {
   padding: 0 0 10px 10px;
-  @media @screen-gt-l {
-    padding: 0;
-  }
 }
 
 .header__button {
   height: fit-content;
   padding: 10px;
   font-size: 16px;
-
-  @media @screen-gt-l {
-    margin-left: 10px;
-  }
 }
