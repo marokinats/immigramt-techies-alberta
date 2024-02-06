@@ -71,13 +71,15 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="header-navbar__nav navbar-nav flex-row flex-wrap ms-auto mt-2 mt-lg-0">
-          <li class="header-navbar__nav-item"><a href="#about" class="nav-link header__link">About</a></li>
-          <li class="header-navbar__nav-item"><a href="#mission" class="nav-link header__link">Mission</a></li>
-          <li class="header-navbar__nav-item"><a href="#goals" class="nav-link header__link">Goal</a></li>
-          <li class="header-navbar__nav-item"><a href="#programs" class="nav-link header__link">Programs</a></li>
-          <li class="header-navbar__nav-item"><a href="#events" class="nav-link header__link">Events</a></li>
-          <li class="header-navbar__nav-item"><a href="#volunteer" class="nav-link header__link">Volunteer</a></li>
-          <li class="header-navbar__nav-item"><a href="#contacts" class="nav-link header__link">Contacts</a></li>
+          <li class="header-navbar__nav-item"><a href="#about" class="header__link">About</a></li>
+          <li class="header-navbar__nav-item"><a href="#mission" class="header__link">Mission</a></li>
+          <li class="header-navbar__nav-item"><a href="#goals" class="header__link">Goal</a></li>
+          <li class="header-navbar__nav-item"><a href="#programs" class="header__link">Programs</a></li>
+          <li class="header-navbar__nav-item">
+            <a href="#careers" class="header__link header__link_highlighted">Careers</a>
+          </li>
+          <li class="header-navbar__nav-item"><a href="#volunteer" class="header__link">Volunteer</a></li>
+          <li class="header-navbar__nav-item"><a href="#contacts" class="header__link">Contacts</a></li>
           <li class="header-navbar__nav-item">
             <a href="https://forms.gle/2dYGpneCRRtYKMx77" target="_blank" class="button button_orange header__button">
               Join our mailing list
@@ -285,90 +287,21 @@
 </section>
 
 
-  <!-- Events -->
-  <section id="events" class="events section section_blue">
+  <!-- Careers -->
+  <section id="careers" class="careers section section_blue">
   <div class="container">
-    <h2 class="h2 events__title section__title section__title_orange">Events</h2>
-    <div class="events__wrapper">
-      <div class="wow animate__animated animate__fadeInUp events__tabs">
-        <input type="radio" name="tabs" id="tabone" checked="checked" />
-        <label for="tabone" class="events__tabs-label">Upcoming</label>
-        <div class="events__tab">
-          <div class="events__empty">
-            <h4 class="h4 events__tab-title">Join our mailing list to&nbsp;keep up&nbsp;with new events</h4>
-            <a href="https://forms.gle/2dYGpneCRRtYKMx77" target="_blank" class="button button_orange">
-              Join our mailing list
-            </a>
-          </div>
-        </div>
-        <input type="radio" name="tabs" id="tabtwo" />
-        <label for="tabtwo" class="events__tabs-label">Past</label>
-
-        <div class="events__tab events__tab_past">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="events__tab-container">
-                  <div class="events__tab-image">
-                    <img src="img/css/components/section-events/event-2023-11-21.jpg" alt="event-2023-11-21" />
-                  </div>
-                  <div class="events__tab-details">
-                    <h4 class="h4 events__tab-title">Immigrant Founder Stories</h4>
-                    <div class="events__tab-text events__tab-text_title">Date:</div>
-                    <p class="events__tab-text">2023, November&nbsp;21</p>
-                    <div class="events__tab-text events__tab-text_title events__tab-text_time">Time:</div>
-                    <p class="events__tab-text events__tab-text_time">4:30 PM to 6:30 PM MST</p>
-                    <div class="events__tab-text events__tab-text_title events__tab-text_venue">Venue:</div>
-                    <p class="events__tab-text events__tab-text_venue">
-                      <a class="events__tab-link" href="https://maps.app.goo.gl/s8Zt9UqLNhcQoLpw7" target="_blank"
-                        >Open Learning Lab Bow Valley Square</a
-                      >
-                      205 5&nbsp;Ave&nbsp;SW Suite 400, Tower&nbsp;2, Calgary, AB&nbsp;T2P&nbsp;3G6
-                    </p>
-                    <a
-                      href="https://lu.ma/uurxdusv"
-                      target="_blank"
-                      class="wow animate__animated animate__fadeInUp button button_blue events__tab-button"
-                    >
-                      Register
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="events__tab-container">
-                  <div class="events__tab-image">
-                    <img src="img/css/components/section-events/event-2023-11-01.jpg" alt="event-2023-11-01" />
-                  </div>
-                  <div class="events__tab-details">
-                    <h4 class="h4 events__tab-title">
-                      International students connect: your place in&nbsp;Alberta tech
-                    </h4>
-                    <div class="events__tab-text events__tab-text_title">Date:</div>
-                    <p class="events__tab-text">2023, November&nbsp;1</p>
-                    <div class="events__tab-text events__tab-text_title events__tab-text_time">Time:</div>
-                    <p class="events__tab-text events__tab-text_time">4:00 PM to 6:00 PM MST</p>
-                    <div class="events__tab-text events__tab-text_title events__tab-text_venue">Venue:</div>
-                    <p class="events__tab-text events__tab-text_venue">
-                      <a class="events__tab-link" href="https://maps.app.goo.gl/QwGnnnZeaKSeHaCQ9" target="_blank"
-                        >Platform Innovation Centre</a
-                      >
-                      407 9&nbsp;Ave&nbsp;SE, Calgary,&nbsp;AB
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="swiper-pagination"></div>
-
-            <div class="swiper-button-prev events__swiper-button"><i class="ti-angle-left"></i></div>
-            <div class="swiper-button-next events__swiper-button"><i class="ti-angle-right"></i></div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h2 class="h2 careers__title section__title section__title_orange">Careers</h2>
+    <h4 class="h4 careers__subtitle">We are seeking a Technical Program Manager</h4>
+    <p class="careers__text">
+      Learn more <a href="jobs/job-description.pdf" target="_blank" class="careers__link">here</a>.
+    </p>
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSefJoB8fayPTT_0CN4fYOFZX2tZc5GGCELCZCMUfz2kRF4jew/viewform"
+      target="_blank"
+      class="wow animate__animated animate__fadeInUp button button_blue careers__button"
+    >
+      Apply for a job
+    </a>
   </div>
 </section>
 

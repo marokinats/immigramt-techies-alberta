@@ -20,7 +20,7 @@
   async function clickHandler(e) {
     e.preventDefault();
     const href = this.getAttribute('href');
-    const offsetTop = document.querySelector(href).offsetTop - 85;
+    const offsetTop = document.querySelector(href).offsetTop - 75;
     await scroll({
       top: offsetTop,
       behavior: 'smooth'
