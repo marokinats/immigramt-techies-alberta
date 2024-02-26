@@ -52,9 +52,7 @@ button {
 body {
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 1px;
-  font-family: 'walkway', Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   min-width: 320px;
   min-height: 100vh;
   scroll-behavior: smooth;
@@ -72,7 +70,7 @@ body {
 @media (min-width: 992px) {
   body {
     font-size: 20px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
 }
 .wrapper {
@@ -106,7 +104,8 @@ section {
   }
 }
 .h1 {
-  font-family: 'libre_baskervillebold', Helvetica, Arial, sans-serif;
+  font-family: 'TitilliumWeb';
+  font-weight: bold;
   font-size: 32px;
   line-height: 1.25;
   letter-spacing: 1px;
@@ -123,7 +122,7 @@ section {
   }
 }
 .h2 {
-  font-family: 'libre_baskervillebold', Helvetica, Arial, sans-serif;
+  font-family: 'TitilliumWeb';
   font-size: 38px;
   line-height: 1.25;
   letter-spacing: normal;
@@ -139,10 +138,9 @@ section {
   }
 }
 .h3 {
-  font-family: 'Furore';
+  font-family: 'Open Sans';
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1;
   letter-spacing: 2px;
 }
@@ -157,7 +155,7 @@ section {
   }
 }
 .h4 {
-  font-family: 'libre_baskervillebold', Helvetica, Arial, sans-serif;
+  font-family: 'TitilliumWeb';
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: normal;
@@ -192,9 +190,9 @@ section {
   color: #131a2e;
 }
 .button {
-  font-family: 'Furore';
-  letter-spacing: 1px;
-  font-weight: normal;
+  font-family: 'Open Sans';
+  letter-spacing: normal;
+  font-weight: bold;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -292,9 +290,21 @@ section {
   }
 }
 @font-face {
-  font-family: 'Furore';
-  src: url('../fonts/furore.ttf') format('truetype'), url('../fonts/furore.woff2') format('woff2');
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans/OpenSans-Regular.ttf') format('truetype'), url('../fonts/OpenSans/OpenSans-Regular.woff') format('woff');
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans/OpenSans-SemiBold.ttf') format('truetype'), url('../fonts/OpenSans/OpenSans-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/OpenSans/OpenSans-Bold.ttf') format('truetype'), url('../fonts/OpenSans/OpenSans-Bold.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
 }
 @font-face {
@@ -304,70 +314,16 @@ section {
   font-style: normal;
 }
 @font-face {
-  font-family: 'libre_baskervilleregular';
-  src: url('librebaskerville-regular-webfont.woff2') format('woff2'), url('librebaskerville-regular-webfont.woff') format('woff');
+  font-family: 'TitilliumWeb';
+  src: url('../fonts/TitilliumWeb/TitilliumWeb-Regular.ttf') format('truetype'), url('../fonts/TitilliumWeb/TitilliumWeb-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'libre_baskervillebold';
-  src: url('../fonts/libre/librebaskerville-bold-webfont.woff2') format('woff2'), url('../fonts/libre/librebaskerville-bold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'walkway';
-  src: url('../fonts/walkway/walkway_black-webfont.woff2') format('woff2'), url('../fonts/walkway/walkway_black-webfont.woff') format('woff'), url('../fonts/walkway/walkway_black-webfont.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'walkway';
-  src: url('../fonts/walkway/walkway_oblique_black-webfont.woff2') format('woff2'), url('../fonts/walkway/walkway_oblique_black-webfont.woff') format('woff'), url('../fonts/walkway/walkway_oblique_black-webfont.ttf') format('truetype');
-  font-weight: 900;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'walkway';
-  src: url('../fonts/walkway/walkway_ultrabold-webfont.woff2') format('woff2'), url('../fonts/walkway/walkway_ultrabold-webfont.woff') format('woff'), url('../fonts/walkway/walkway_ultrabold-webfont.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'walkway';
-  src: url('../fonts/walkway/walkway_oblique_ultrabold-webfont.woff2') format('woff2'), url('../fonts/walkway/walkway_oblique_ultrabold-webfont.woff') format('woff'), url('../fonts/walkway/walkway_oblique_ultrabold-webfont.ttf') format('truetype');
-  font-weight: 800;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'walkway';
-  src: url('../fonts/walkway/walkway_bold-webfont.woff2') format('woff2'), url('../fonts/walkway/walkway_bold-webfont.woff') format('woff'), url('../fonts/walkway/walkway_bold-webfont.ttf') format('truetype');
+  font-family: 'TitilliumWeb';
+  src: url('../fonts/TitilliumWeb/TitilliumWeb-Bold.ttf') format('truetype'), url('../fonts/TitilliumWeb/TitilliumWeb-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
-}
-@font-face {
-  font-family: 'walkway';
-  src: url('../fonts/walkway/walkway_oblique_bold-webfont.woff2') format('woff2'), url('../fonts/walkway/walkway_oblique_bold-webfont.woff') format('woff'), url('../fonts/walkway/walkway_oblique_bold-webfont.ttf') format('truetype');
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'walkway';
-  src: url('../fonts/walkway/walkway_semibold-webfont.woff2') format('woff2'), url('../fonts/walkway/walkway_semibold-webfont.woff') format('woff'), url('../fonts/walkway/walkway_semibold-webfont.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'walkway';
-  src: url('../fonts/walkway/walkway_oblique_semibold-webfont.woff2') format('woff2'), url('../fonts/walkway/walkway_oblique_semibold-webfont.woff') format('woff'), url('../fonts/walkway/walkway_oblique_semibold-webfont.ttf') format('truetype');
-  font-weight: 600;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'walkway';
-  src: url('../fonts/walkway/walkway_oblique-webfont.woff2') format('woff2'), url('../fonts/walkway/walkway_oblique-webfont.woff') format('woff'), url('../fonts/walkway/walkway_oblique-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
 }
 [class^='ti-'],
 [class*=' ti-'] {
@@ -433,7 +389,8 @@ section {
   width: 100%;
 }
 .header__link {
-  font-family: 'Furore';
+  font-family: 'Open Sans';
+  font-weight: 600;
   font-size: 16px;
   color: #ebedf3;
   padding: 0;
@@ -607,8 +564,8 @@ section {
   }
 }
 .main__title-lg {
-  color: #fff8ef;
-  text-shadow: 1px 1px 2px #fcbc5c;
+  color: #ebedf3;
+  text-shadow: 1px 1px 2px #374983;
 }
 .main__title-sm {
   font-size: 26px;
@@ -657,8 +614,7 @@ section {
 }
 .main__text_desktop {
   display: none;
-  font-weight: 800;
-  letter-spacing: 2px;
+  font-weight: 600;
 }
 @media (min-width: 576px) {
   .main__text_desktop {
@@ -705,18 +661,6 @@ section {
 }
 .about-us__wrapper_1 {
   margin-bottom: 30px;
-}
-@media (min-width: 992px) {
-  .about-us__wrapper_1 {
-    -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s;
-  }
-}
-@media (min-width: 992px) {
-  .about-us__wrapper_2 {
-    -webkit-animation-delay: 0.5s;
-            animation-delay: 0.5s;
-  }
 }
 .about-us__sm {
   width: 100%;
@@ -832,12 +776,6 @@ section {
 .mission__title {
   margin-bottom: 30px;
 }
-@media (min-width: 992px) {
-  .mission__title {
-    -webkit-animation-delay: 0.2s;
-            animation-delay: 0.2s;
-  }
-}
 .mission__text {
   width: 100%;
   max-width: 100%;
@@ -855,12 +793,6 @@ section {
 .mission__subtitle {
   align-self: flex-end;
   margin: 30px 0;
-}
-@media (min-width: 992px) {
-  .mission__subtitle {
-    -webkit-animation-delay: 0.3s;
-            animation-delay: 0.3s;
-  }
 }
 .mission__card {
   background-color: #fff8ef;
@@ -909,8 +841,7 @@ section {
   transition: all 0.3s ease 0s;
 }
 .mission__card-text {
-  font-weight: 800;
-  letter-spacing: 1px;
+  font-weight: 600;
   font-size: 18px;
 }
 @media (min-width: 992px) {
@@ -1007,10 +938,10 @@ section {
 }
 .goals__text {
   width: 100%;
-  font-weight: 800;
 }
 .goals__text_left {
   max-width: 100%;
+  font-weight: 600;
 }
 @media (min-width: 576px) {
   .goals__text_left {
@@ -1034,25 +965,168 @@ section {
     padding: 0 0 15px 25px;
   }
 }
-.careers {
+.events {
   position: relative;
   z-index: 2;
 }
-.careers__title,
-.careers__subtitle {
+.events__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.events__title {
   text-align: center;
   margin-bottom: 30px;
 }
-.careers__button {
+.events__tab-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.events__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.events__tabs-label {
+  order: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  margin-right: 0.2rem;
+  margin-bottom: 0;
+  color: #131a2e;
+  cursor: pointer;
+  background: #fff;
+  font-weight: bold;
+  transition: background ease 0.3s;
+}
+@media (min-width: 576px) {
+  .events__tabs-label {
+    padding: 16px 20px;
+  }
+}
+.events__tab {
+  order: 9;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff8ef;
+  box-shadow: -10px 10px 0px 0px #293762;
+  min-height: 300px;
+}
+@media (min-width: 576px) {
+  .events__tab {
+    padding: 2rem;
+  }
+}
+.events__tab_past {
+  padding: 2rem 1rem;
+  padding-bottom: 0;
+}
+.events__tabs input[type='radio'] {
+  display: none;
+}
+.events__tabs input[type='radio']:checked + .events__tabs-label {
+  background-color: #fff8ef;
+}
+.events__tabs input[type='radio']:checked + .events__tabs-label + .events__tab {
+  display: block;
+}
+.events__tab-image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media (min-width: 576px) {
+  .events__tab-image {
+    max-width: 35%;
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 768px) {
+  .events__tab-image {
+    max-width: 40%;
+  }
+}
+.events__tab-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 576px) {
+  .events__tab-details {
+    max-width: 65%;
+    padding-left: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .events__tab-details {
+    max-width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .events__tab-details {
+    padding-left: 40px;
+  }
+}
+.events__tab-title {
+  margin-bottom: 30px;
+}
+@media (min-width: 1200px) {
+  .events__tab-title {
+    margin-bottom: 60px;
+  }
+}
+.events__tab-text_title {
+  font-weight: bold;
+}
+.events__tab-button {
+  align-self: center;
+  margin-top: 30px;
+}
+.events__tab-link {
+  display: block;
+  text-decoration: none;
+  color: #293762;
+}
+.events__tab-link:hover {
+  text-decoration: underline;
+  color: #212c4f;
+}
+.events__empty {
+  width: 100%;
   margin: 0 auto;
-}
-.careers__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   text-align: center;
-  margin-bottom: 60px;
 }
-.careers__link {
-  font-weight: 900;
-  color: #2c3a69;
+@media (min-width: 992px) {
+  .events__empty {
+    max-width: 80%;
+  }
+}
+.events__tab_past .events__tab-text_time,
+.events__tab_past .events__tab-text_venue,
+.events__tab_past .events__tab-button {
+  display: none;
+}
+.events .swiper-wrapper {
+  margin-bottom: 50px;
+}
+.events .swiper-slide {
+  padding: 0 45px;
+}
+.events .swiper-pagination-bullet-active {
+  background-color: #293762;
+}
+.events__swiper-button {
+  color: #293762;
+  font-size: 40px;
+  text-shadow: 1px 1px 2px #fcbc5c;
 }
 .volunteer {
   background: rgba(0, 0, 0, 0) url('../img/css/components/section-volunteer/volunteer-bg.jpg') no-repeat fixed center center / cover;
@@ -1084,11 +1158,11 @@ section {
 }
 .volunteer__text {
   width: 100%;
-  font-weight: 800;
   margin-bottom: 60px;
 }
 .volunteer__text_left {
   max-width: 100%;
+  font-weight: 600;
 }
 @media (min-width: 576px) {
   .volunteer__text_left {
@@ -1278,7 +1352,6 @@ section {
 }
 .footer__info {
   color: #fff;
-  font-weight: normal;
   font-size: 14px;
 }
 @media (min-width: 576px) {
